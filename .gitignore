@@ -1,0 +1,26 @@
+# Coding assistants' stuff
+.agents/
+/CLAUDE.md
+/instructions.md
+.claude/
+/GEMINI.md
+.gemini/
+
+# Cursor specific files
+.cursor
+.cursorignore
+.cursorindexingignore
+
+# macOS specific
+.DS_Store
+
+# Python
+__pycache__
+config.py
+
+# VS2017 and VSCode config files.
+.vscode
+.vs
+
+# zed config files
+.zed
