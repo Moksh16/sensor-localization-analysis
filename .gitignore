@@ -11,12 +11,16 @@
 .cursorignore
 .cursorindexingignore
 
+# Data
+data/
+
 # macOS specific
 .DS_Store
 
 # Python
 __pycache__
 config.py
+venv/
 
 # VS2017 and VSCode config files.
 .vscode
