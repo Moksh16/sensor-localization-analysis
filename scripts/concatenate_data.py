@@ -41,6 +41,8 @@ def concat_files(src_dir: Path, out_dir: Path) -> None:
                 continue
             if x.name == out_dir.name:
                 continue
+            if x.suffix != ".txt":
+                continue
             with open(x, mode="r", encoding="utf-8") as infile:
                 outfile.write(infile.read())
 
