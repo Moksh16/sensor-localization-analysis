@@ -36,7 +36,9 @@ def build_features() -> Path:
         raise ValueError("Found NaN or inf values in the input data")
     data[INT_COLUMNS] = data[INT_COLUMNS].astype(int)
 
-    data = pd.concat([add_features(group) for _, group in data.groupby("drive", sort=True)])
+    data = pd.concat(
+        [add_features(group) for _, group in data.groupby("drive", sort=True)]
+    )
     data = data.reset_index(drop=True)
 
     data.to_parquet(out_file, index=False)

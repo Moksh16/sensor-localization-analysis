@@ -40,7 +40,7 @@ OXTS_HEADERS = [
 def build_csv() -> Path:
     src_dir = DATA_DIR / "processed"
     out_dir = DATA_DIR / "csv"
-    
+
     out_dir.mkdir(exist_ok=True)
 
     for src_file in sorted(src_dir.glob("*.txt")):
